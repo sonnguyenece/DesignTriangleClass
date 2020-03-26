@@ -44,7 +44,7 @@ public class Triangle extends Shape {
     }
 
     public double getArea() {
-        double p = getPerimeter();
+        double p = getPerimeter()/2;
         return (double) Math.round(Math.sqrt(p * (p - side1) * (p - side2) * (p - side3))*100)/100;
     }
 
